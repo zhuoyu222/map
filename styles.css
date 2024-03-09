@@ -1,0 +1,141 @@
+/* styles.css */
+
+body {
+    background-color: Cornsilk;
+    font-family: 'Verdana', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px; /* Added padding for overall page content */
+    line-height: 1.6;
+}
+
+.menu {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+.menu a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px; /* Added padding for better touch target size */
+    display: inline-block; /* To enable padding effect */
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centers the image and adds vertical space */
+}
+
+footer {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Changed from fixed to relative for natural flow */
+    width: 100%;
+    bottom: 0;
+    margin-top: 20px; /* Adds space before the footer */
+}
+
+/* Adding a serif font to at least one element */
+h1 {
+    font-family: 'Georgia', serif; /* Example of changing font to a serif with "serif" as a fallback */
+}
+
+/* Ensuring navigation section is distinct */
+nav.menu {
+    background-color: #e2e2e2; /* Slightly lighter for distinction */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+}
+
+/* Additional styles for specificity and aesthetics */
+.menu a:hover {
+    background-color: #d3d3d3; /* Hover effect for navigation links */
+    border-radius: 5px; /* Rounded corners for links on hover */
+}
+
+
+.home-content {
+    body {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: #FAFAD2;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #333;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* Unique section styles */
+.cantonese { background-color: #FFEFD5; }
+.beijing { background-color: #FFFACD; }
+.shandong { background-color: #B0E0E6; }
+.sichuan { background-color: #FFDAB9; }
+
+@media (min-width: 600px) {
+    body {
+        flex-direction: row;
+    }
+    .menu {
+        position: sticky;
+        top: 0;
+        background-color: Beige;
+        padding: 10px 0;
+        color: white;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .menu a {
+        float: left;
+        color: darkorange;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    main {
+        margin-left: 200px;
+    }
+}
+
+
